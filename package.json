@@ -6,21 +6,14 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server": "node server.js",
     "server:supabase": "node server-supabase.js",
-    "dev:all": "concurrently \"npm run server\" \"npm run dev\"",
-    "dev:supabase": "concurrently \"npm run server:supabase\" \"npm run dev\"",
-    "setup-supabase": "node setup-supabase.js",
-    "test-supabase": "node setup-supabase.js test"
+    "dev:supabase": "concurrently \"npm run server:supabase\" \"npm run dev\""
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.0",
     "express": "^4.18.2",
     "cors": "^2.8.5",
-    "sqlite3": "^5.1.6",
-    "sqlite": "^5.1.1",
     "@supabase/supabase-js": "^2.39.0",
     "dotenv": "^16.3.1"
   },

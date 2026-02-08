@@ -8,7 +8,7 @@ A modern sign-up website for an E-commerce Influencer Marketplace where users ca
 - **Preference Selection**: 
   - **Business**: Choose to contact influencers or be contacted by them
   - **Influencer**: Choose to contact businesses or be contacted by them
-- **User Registration**: Collect name, email, and password
+- **User Registration**: Collect name, email, and WeChat/Instagram
 - **Modern UI**: Beautiful gradient design with smooth animations
 
 ## Getting Started
@@ -29,9 +29,9 @@ npm run dev:all
 
 Or run them separately:
 
-**Backend Server:**
+**Backend Server (Supabase):**
 ```bash
-npm run server
+npm run server:supabase
 ```
 The backend API will be available at `http://localhost:3001`
 
@@ -49,7 +49,7 @@ npm run build
 
 ## Database
 
-The application uses SQLite database. The database file (`database.sqlite`) will be automatically created when you first run the server.
+The application uses Supabase (PostgreSQL) for data storage. Configure your Supabase credentials in the `.env` file.
 
 ### API Endpoints
 
@@ -63,8 +63,8 @@ The application uses SQLite database. The database file (`database.sqlite`) will
 - Vite
 - CSS3 (with modern animations and gradients)
 - Express.js (Backend API)
-- SQLite (Local development) / Supabase (Production)
+- Supabase (PostgreSQL) for data storage
 
 ## Deployment
 
-For instructions on deploying to production with Supabase, see [DEPLOYMENT.md](./DEPLOYMENT.md)
+The application is configured to use Supabase for production. Set up your Supabase project and add credentials to `.env` file.
